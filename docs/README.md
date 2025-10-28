@@ -7,13 +7,13 @@ These notes explore how machine learning **explanations** can be made more **vis
 
 ### 📚 Documentation Index
 
-* [🧬 Data Explanation](./data.md)
+* [🧬 Data Explanation](./data_explanation.md)
   Overview of the breast cancer dataset, feature meanings, and why “worst” features dominate.
 
-* [⚙️ Code Explanation](./code.md)
+* [⚙️ Code Explanation](./code_explanation.md)
   Step-by-step guide to how the Python notebook trains the model, computes SHAP values, and exports JSON for the UI layer.
 
-* [📊 Visualization Explanation](./visualizations.md)
+* [📊 Visualization Explanation](./viz_explanation.md)
   How the exported data is visualized in the frontend — bar and waterfall charts, color mapping, and design considerations for interpretability.
 
 ---
