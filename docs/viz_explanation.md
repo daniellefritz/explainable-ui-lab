@@ -1,3 +1,5 @@
+# 📊 Visualization Explanation
+
 ## 🩺 How These Features Appear in the SHAP Waterfall
 
 In the SHAP waterfall visualizations, each bar corresponds to one of these measured features.
@@ -12,7 +14,7 @@ This section explains what each of those features actually represents and why th
 
 ---
 
-# 📊 Visualization Explanation
+## 📊 Visualization Code Explanation
 
 This section explains how the exported **SHAP explanations** are visualized in the frontend and how each element communicates the model’s reasoning.
 
