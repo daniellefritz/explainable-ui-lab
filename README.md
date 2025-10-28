@@ -70,3 +70,20 @@ Current experiments focus on:
 Built while learning about Explainable AI (XAI) through courses and hands-on exploration.
 Dataset: [UCI Wisconsin Diagnostic Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 Libraries: `scikit-learn`, `shap`, `matplotlib`, `pandas`, `numpy`
+
+Perfect. Here’s a closing section that sounds like you — thoughtful, grounded, and curious without slipping into corporate-speak:
+
+---
+
+## 🌙 Personal Note
+
+This project started as a spark — a mix of curiosity and frustration. I wanted to *see* what AI models were doing, not just trust their math.
+My background is in frontend development and design thinking, so I’m exploring how explainability can live at the intersection of **data, empathy, and UI**.
+
+The dream is to make machine learning systems feel less like mysterious oracles and more like collaborators we can understand, question, and improve.
+
+Every experiment here is a step toward that — turning complex algorithms into conversations we can actually have with the machines we build.
+
+---
+
+
