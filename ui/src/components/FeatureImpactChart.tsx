@@ -32,25 +32,16 @@ export default function FeatureImpactChart({ exp, topK = 12 }: Props) {
     },
     yAxis: { type: 'category', inverse: true, data: yLabels },
     series: [
-      // transparent offset to center bars at zero (classic diverging-bar trick)
-      {
-        name: 'offset',
-        type: 'bar',
-        stack: 'impact',
-        itemStyle: { color: 'transparent' },
-        emphasis: { disabled: true },
-        data: values.map(v => (v < 0 ? v : 0)),
-      },
       {
         name: 'impact',
         type: 'bar',
         stack: 'impact',
         data: values.map(v => ({
-          value: Math.abs(v),
+          value: v,
           itemStyle: { color: v >= 0 ? '#E86E47' : '#4E7CF5' },
         })),
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        label: { show: true, position: 'insideRight', formatter: (d: any) => (d.data?.value ?? d.value).toFixed(2) },
+        label: { show: true, position: 'inside', formatter: (d: any) => (d.data?.value ?? d.value).toFixed(2) },
       },
     ],
   };
