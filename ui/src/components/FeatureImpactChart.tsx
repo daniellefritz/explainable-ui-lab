@@ -17,10 +17,13 @@ export default function FeatureImpactChart({ exp, topK = 12 }: Props) {
       axisPointer: { type: 'shadow' },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       formatter: (params: any) => {
-        const p = params[1] ?? params[0];
-        const dir = p.value >= 0 ? '↑ increases' : '↓ decreases';
-        return `<b>${p.name}</b><br/>Impact: ${p.value.toFixed(3)} (${dir})`;
-      }
+        const i = (params[1] ?? params[0]).dataIndex;
+        const name = yLabels[i];
+        const w = values[i];
+        const val = exp.input[name as keyof typeof exp.input];
+        const dir = w >= 0 ? '↑ increases' : '↓ decreases';
+        return `<b>${name}</b><br/>Value: ${val}<br/>Impact: ${w.toFixed(3)} (${dir})`;
+        }
     },
     grid: { left: 140, right: 24, top: 24, bottom: 24 },
     xAxis: {
